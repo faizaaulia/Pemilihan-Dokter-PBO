@@ -29,7 +29,6 @@ public class FrameUtama extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -40,16 +39,17 @@ public class FrameUtama extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        jtxtspesial = new javax.swing.JTextField();
+        jtxtnama = new javax.swing.JTextField();
+        jtxtalamat = new javax.swing.JTextField();
+        jtxtusia = new javax.swing.JTextField();
         jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
+        jtxtjenis = new javax.swing.JTextField();
+        jtxtgol = new javax.swing.JTextField();
+        jtxtstatus = new javax.swing.JTextField();
+        jtxtkewar = new javax.swing.JTextField();
+        jtxtwaktu = new javax.swing.JTextField();
+        jconadokt = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -64,15 +64,6 @@ public class FrameUtama extends javax.swing.JFrame {
         jLabel2.setText("Pilih Dokter");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(20, 50, 80, 14);
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(160, 50, 210, 20);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Identitas", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 12))); // NOI18N
         jPanel1.setLayout(null);
@@ -122,37 +113,37 @@ public class FrameUtama extends javax.swing.JFrame {
         jPanel1.add(jLabel11);
         jLabel11.setBounds(20, 310, 130, 15);
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        jtxtspesial.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                jtxtspesialActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField1);
-        jTextField1.setBounds(170, 350, 190, 20);
+        jPanel1.add(jtxtspesial);
+        jtxtspesial.setBounds(170, 350, 190, 20);
 
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        jtxtnama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                jtxtnamaActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField2);
-        jTextField2.setBounds(170, 30, 190, 20);
+        jPanel1.add(jtxtnama);
+        jtxtnama.setBounds(170, 30, 190, 20);
 
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        jtxtalamat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                jtxtalamatActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField3);
-        jTextField3.setBounds(170, 70, 190, 20);
+        jPanel1.add(jtxtalamat);
+        jtxtalamat.setBounds(170, 70, 190, 20);
 
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+        jtxtusia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
+                jtxtusiaActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField4);
-        jTextField4.setBounds(170, 110, 190, 20);
+        jPanel1.add(jtxtusia);
+        jtxtusia.setBounds(170, 110, 190, 20);
 
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -162,95 +153,137 @@ public class FrameUtama extends javax.swing.JFrame {
         jPanel1.add(jTextField5);
         jTextField5.setBounds(170, 110, 190, 20);
 
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+        jtxtjenis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
+                jtxtjenisActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField6);
-        jTextField6.setBounds(170, 150, 190, 20);
+        jPanel1.add(jtxtjenis);
+        jtxtjenis.setBounds(170, 150, 190, 20);
 
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        jtxtgol.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                jtxtgolActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField7);
-        jTextField7.setBounds(170, 190, 190, 20);
+        jPanel1.add(jtxtgol);
+        jtxtgol.setBounds(170, 190, 190, 20);
 
-        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+        jtxtstatus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField8ActionPerformed(evt);
+                jtxtstatusActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField8);
-        jTextField8.setBounds(170, 230, 190, 20);
+        jPanel1.add(jtxtstatus);
+        jtxtstatus.setBounds(170, 230, 190, 20);
 
-        jTextField9.addActionListener(new java.awt.event.ActionListener() {
+        jtxtkewar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField9ActionPerformed(evt);
+                jtxtkewarActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField9);
-        jTextField9.setBounds(170, 270, 190, 20);
+        jPanel1.add(jtxtkewar);
+        jtxtkewar.setBounds(170, 270, 190, 20);
 
-        jTextField10.addActionListener(new java.awt.event.ActionListener() {
+        jtxtwaktu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField10ActionPerformed(evt);
+                jtxtwaktuActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField10);
-        jTextField10.setBounds(170, 310, 190, 20);
+        jPanel1.add(jtxtwaktu);
+        jtxtwaktu.setBounds(170, 310, 190, 20);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(20, 80, 370, 380);
 
+        jconadokt.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jconadokt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jconadoktActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jconadokt);
+        jconadokt.setBounds(190, 50, 180, 20);
+
         setBounds(0, 0, 429, 516);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void jtxtspesialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtspesialActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_jtxtspesialActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void jtxtnamaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtnamaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_jtxtnamaActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void jtxtalamatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtalamatActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_jtxtalamatActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void jtxtusiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtusiaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
-
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_jtxtusiaActionPerformed
 
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField5ActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void jtxtjenisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtjenisActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_jtxtjenisActionPerformed
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+    private void jtxtgolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtgolActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
+    }//GEN-LAST:event_jtxtgolActionPerformed
 
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+    private void jtxtstatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtstatusActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField8ActionPerformed
+    }//GEN-LAST:event_jtxtstatusActionPerformed
 
-    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
+    private void jtxtkewarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtkewarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField9ActionPerformed
+    }//GEN-LAST:event_jtxtkewarActionPerformed
 
-    private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
+    private void jtxtwaktuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtwaktuActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField10ActionPerformed
+    }//GEN-LAST:event_jtxtwaktuActionPerformed
+
+    private void jconadoktActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jconadoktActionPerformed
+        // TODO add your handling code here:
+        if(jconadokt.getSelectedItem().equals("DR. Farras Yassar")) {
+            jtxtnama.setText("DR. Farras Yassar "); 
+            jtxtalamat.setText("Jl. Surabaya 16, Malang"); 
+            jtxtusia.setText("20 Tahun"); 
+            jtxtjenis.setText("Laki-Laki"); 
+            jtxtgol.setText("A"); 
+            jtxtstatus.setText("Belum Menikah "); 
+            jtxtkewar.setText("Indonesia"); 
+            jtxtspesial.setText("Dokter Umum"); 
+            jtxtwaktu.setText(" Pagi (07.00-15.00)");
+        }
+        else if (jconadokt.getSelectedItem().equals("DR. Anisa Putri")) {
+            jtxtnama.setText("DR. Anisa Putri"); 
+            jtxtalamat.setText("Jl. Veteran 3, Malang"); 
+            jtxtusia.setText("20 Tahun"); 
+            jtxtjenis.setText("Perempuan"); 
+            jtxtgol.setText("O"); 
+            jtxtstatus.setText("Belum Menikah"); 
+            jtxtkewar.setText("Indonesia"); 
+            jtxtspesial.setText("Dokter Gigi"); 
+            jtxtwaktu.setText(" Sore (16.00-22.00)");
+        }
+        else if (jconadokt.getSelectedItem().equals("DR. Harun Fajar")) {
+            jtxtnama.setText("DR. Harun Fajar "); 
+            jtxtalamat.setText("Jl. Bandung 9, Malang"); 
+            jtxtusia.setText("20 Tahun"); 
+            jtxtjenis.setText("Laki-Laki"); 
+            jtxtgol.setText("B"); 
+            jtxtstatus.setText("Belum Menikah"); 
+            jtxtkewar.setText("Indonesia"); 
+            jtxtspesial.setText("Dokter Gizi"); 
+            jtxtwaktu.setText(" Malam (22.00-06.00)");
+        }
+    }//GEN-LAST:event_jconadoktActionPerformed
 
     /**
      * @param args the command line arguments
@@ -288,7 +321,6 @@ public class FrameUtama extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -301,15 +333,16 @@ public class FrameUtama extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JComboBox<String> jconadokt;
+    private javax.swing.JTextField jtxtalamat;
+    private javax.swing.JTextField jtxtgol;
+    private javax.swing.JTextField jtxtjenis;
+    private javax.swing.JTextField jtxtkewar;
+    private javax.swing.JTextField jtxtnama;
+    private javax.swing.JTextField jtxtspesial;
+    private javax.swing.JTextField jtxtstatus;
+    private javax.swing.JTextField jtxtusia;
+    private javax.swing.JTextField jtxtwaktu;
     // End of variables declaration//GEN-END:variables
 }
