@@ -43,7 +43,6 @@ public class FrameUtama extends javax.swing.JFrame {
         jtxtnama = new javax.swing.JTextField();
         jtxtalamat = new javax.swing.JTextField();
         jtxtusia = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
         jtxtjenis = new javax.swing.JTextField();
         jtxtgol = new javax.swing.JTextField();
         jtxtstatus = new javax.swing.JTextField();
@@ -58,7 +57,7 @@ public class FrameUtama extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Pemilihan Dokter");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(90, 0, 190, 40);
+        jLabel1.setBounds(110, 0, 190, 40);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel2.setText("Pilih Dokter");
@@ -71,7 +70,7 @@ public class FrameUtama extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel3.setText("Dokter Spesialis");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(20, 350, 130, 15);
+        jLabel3.setBounds(20, 430, 130, 15);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel4.setText("Nama");
@@ -81,37 +80,37 @@ public class FrameUtama extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel5.setText("Alamat");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(20, 70, 70, 15);
+        jLabel5.setBounds(20, 80, 70, 15);
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel6.setText("Usia");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(20, 110, 70, 15);
+        jLabel6.setBounds(20, 130, 70, 15);
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel7.setText("Jenis Kelamin");
         jPanel1.add(jLabel7);
-        jLabel7.setBounds(20, 150, 110, 15);
+        jLabel7.setBounds(20, 180, 110, 15);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel8.setText("Gol. Darah");
         jPanel1.add(jLabel8);
-        jLabel8.setBounds(20, 190, 70, 15);
+        jLabel8.setBounds(20, 230, 70, 15);
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel9.setText("Status");
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(20, 230, 70, 15);
+        jLabel9.setBounds(20, 280, 70, 15);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel10.setText("Kewarganegaraan");
         jPanel1.add(jLabel10);
-        jLabel10.setBounds(20, 270, 130, 15);
+        jLabel10.setBounds(20, 330, 130, 15);
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel11.setText("Waktu Praktek");
         jPanel1.add(jLabel11);
-        jLabel11.setBounds(20, 310, 130, 15);
+        jLabel11.setBounds(20, 380, 130, 15);
 
         jtxtspesial.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,7 +118,7 @@ public class FrameUtama extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jtxtspesial);
-        jtxtspesial.setBounds(170, 350, 190, 20);
+        jtxtspesial.setBounds(170, 420, 190, 30);
 
         jtxtnama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -127,7 +126,7 @@ public class FrameUtama extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jtxtnama);
-        jtxtnama.setBounds(170, 30, 190, 20);
+        jtxtnama.setBounds(170, 20, 190, 30);
 
         jtxtalamat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -135,7 +134,7 @@ public class FrameUtama extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jtxtalamat);
-        jtxtalamat.setBounds(170, 70, 190, 20);
+        jtxtalamat.setBounds(170, 70, 190, 30);
 
         jtxtusia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,15 +142,7 @@ public class FrameUtama extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jtxtusia);
-        jtxtusia.setBounds(170, 110, 190, 20);
-
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jTextField5);
-        jTextField5.setBounds(170, 110, 190, 20);
+        jtxtusia.setBounds(170, 120, 190, 30);
 
         jtxtjenis.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -159,7 +150,7 @@ public class FrameUtama extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jtxtjenis);
-        jtxtjenis.setBounds(170, 150, 190, 20);
+        jtxtjenis.setBounds(170, 170, 190, 30);
 
         jtxtgol.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -167,7 +158,7 @@ public class FrameUtama extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jtxtgol);
-        jtxtgol.setBounds(170, 190, 190, 20);
+        jtxtgol.setBounds(170, 220, 190, 30);
 
         jtxtstatus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -175,7 +166,7 @@ public class FrameUtama extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jtxtstatus);
-        jtxtstatus.setBounds(170, 230, 190, 20);
+        jtxtstatus.setBounds(170, 270, 190, 30);
 
         jtxtkewar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -183,7 +174,7 @@ public class FrameUtama extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jtxtkewar);
-        jtxtkewar.setBounds(170, 270, 190, 20);
+        jtxtkewar.setBounds(170, 320, 190, 30);
 
         jtxtwaktu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -191,21 +182,21 @@ public class FrameUtama extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jtxtwaktu);
-        jtxtwaktu.setBounds(170, 310, 190, 20);
+        jtxtwaktu.setBounds(170, 370, 190, 30);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(20, 80, 370, 380);
+        jPanel1.setBounds(20, 80, 370, 470);
 
-        jconadokt.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jconadokt.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "DR. Farras Yassar", "DR. Anisa Putri", "DR. Harun Fajar" }));
         jconadokt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jconadoktActionPerformed(evt);
             }
         });
         getContentPane().add(jconadokt);
-        jconadokt.setBounds(190, 50, 180, 20);
+        jconadokt.setBounds(190, 40, 180, 30);
 
-        setBounds(0, 0, 429, 516);
+        setBounds(0, 0, 429, 601);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jtxtspesialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtspesialActionPerformed
@@ -223,10 +214,6 @@ public class FrameUtama extends javax.swing.JFrame {
     private void jtxtusiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtusiaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jtxtusiaActionPerformed
-
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
 
     private void jtxtjenisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtjenisActionPerformed
         // TODO add your handling code here:
@@ -333,7 +320,6 @@ public class FrameUtama extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField5;
     private javax.swing.JComboBox<String> jconadokt;
     private javax.swing.JTextField jtxtalamat;
     private javax.swing.JTextField jtxtgol;
